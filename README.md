@@ -5,12 +5,16 @@
  https://opensource.org/licenses/MIT
 -->
 
-# Robinhood Trading API
+# Crypto Market Data
 
 I had issues with other publically available API SDKs for Robinhood being
 out-of-date or simply broken so hopefully this will help.
 
 This package is based on the documentation found on the official Robinhood
 website here: [Robinhood Trading API (1.0.0)][rhdocs].
+
+I then had problems just with the realtime data available with Robinhood itself
+so I decided to bring in the CCXT library and make this package more compatible
+with multiple exchanges.
 
 [rhdocs]: https://docs.robinhood.com/crypto/trading/
