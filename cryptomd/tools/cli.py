@@ -5,6 +5,7 @@
 
 import click
 
+from cryptomd.tools.kraken.kraken_ohlcv import print_data
 from cryptomd.tools.robinhood.generate_keypair import add_one, generate_keypair
 
 
@@ -14,6 +15,19 @@ def cli_rh_add_one(num: int):
     click.echo(str(add_one(number=num)))
 
 
+# ---- KRAKEN ----
+# Get OHLCV Data
+@click.command()
+@click.option('-s', '--symbol', type=str)
+@click.option('-t', '--timeframe', type=str)
+# Get OHLCV data (close) from Kraken exchange.
+def cli_kraken_data(symbol: str, timeframe: str):
+    last = print_data(symbol=symbol, timeframe=timeframe)
+    print('\n' + 'last price: ' + str(last) + '\n')
+
+
+# ---- ROBINHOOD ----
+# Generate keypair
 @click.command()
 @click.option(
         '-d',
