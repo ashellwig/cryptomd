@@ -1,6 +1,15 @@
 {
     /* ---- Editor ---- */
     "editor.trimAutoWhitespace": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
     /* ---- Programming Languages ---- */
     // Python
     "[python]": {
