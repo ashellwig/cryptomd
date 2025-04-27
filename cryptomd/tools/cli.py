@@ -10,7 +10,7 @@ from cryptomd.tools.robinhood.generate_keypair import add_one, generate_keypair
 
 @click.command()
 @click.option('-n', '--num', type=int)
-def cli_add_one(num: int):
+def cli_rh_add_one(num: int):
     click.echo(str(add_one(number=num)))
 
 
@@ -21,7 +21,7 @@ def cli_add_one(num: int):
         type=str,
         help='Where should the output files containing the key data go?'
 )
-def cli_generate_keypair(directory: str):
+def cli_rh_generate_keypair(directory: str):
     """CLI interface to the generate_keypair function.
 
     Args:

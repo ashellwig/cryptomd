@@ -5,7 +5,7 @@
 
 import click
 
-from cryptomd.tools.cli import cli_add_one, cli_generate_keypair
+from cryptomd.tools.cli import cli_rh_add_one, cli_rh_generate_keypair
 
 
 @click.group()
@@ -13,8 +13,8 @@ def cli():
     pass
 
 
-cli.add_command(cli_add_one, name='add-one')
-cli.add_command(cli_generate_keypair, name='gen-keypair')
+cli.add_command(cli_rh_add_one, name='add-one')
+cli.add_command(cli_rh_generate_keypair, name='gen-keypair')
 
 if __name__ == '__main__':
     cli()

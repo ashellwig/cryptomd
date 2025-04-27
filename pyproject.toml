@@ -14,7 +14,7 @@ name = "cryptomd"
 authors = [
     {name = "Ash Hellwig", email = "ahellwig.dev@gmail.com"},
 ]
-description = "Python package for accessing Robinhood's Trading API (1.0.0)"
+description = "Retrieves market data from the api of various exchanges."
 version = "0.0.1"
 readme = "README.md"
 requires-python = ">= 3.13"
